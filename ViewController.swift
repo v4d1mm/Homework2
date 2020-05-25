@@ -22,15 +22,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        View
-        viewColor.layer.cornerRadius = 15
-        let currentRed = CGFloat(redSliderOutlet.value)
-        let currentGreen = CGFloat(greenSliderOutlet.value)
-        let currentBlue = CGFloat(blueSliderOutlet.value)
-        viewColor.backgroundColor = UIColor(displayP3Red: currentRed, green: currentGreen, blue: currentBlue, alpha: 1)
         //        Sliders
         redSliderOutlet.tintColor = .red
         greenSliderOutlet.tintColor = .green
+        let currentRed = CGFloat(redSliderOutlet.value)
+        let currentGreen = CGFloat(greenSliderOutlet.value)
+        let currentBlue = CGFloat(blueSliderOutlet.value)
+        //        View
+        viewColor.layer.cornerRadius = 15
+        viewColor.backgroundColor = UIColor(displayP3Red: currentRed, green: currentGreen, blue: currentBlue, alpha: 1)
+        
     }
     
     // Red Slider
